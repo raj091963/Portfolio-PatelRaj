@@ -1,0 +1,122 @@
+#contact{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display:inline;
+    
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid rgb(102 53 239);
+}
+.name div{
+    font-size: 25px;
+    margin: 30px 30px;
+    font-weight: 400;
+}
+.name a{
+    text-decoration: none;
+}
+.name a img{
+    cursor: pointer;
+}
+
+.photo{
+    display: flex;
+    place-content: center;
+    position: relative;
+    bottom: 50px;
+}
+.photo img{
+    width: 100px;
+}
+.title{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 40px;
+    font-family: "eurostile", sans-serif;
+    margin-inline: 60px;
+}
+div.container {
+    padding: 50px 50px 50px 33px;
+    margin: auto auto;
+    width: 40%;
+} 
+input[type=submit] {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%,-20%);
+    padding: 12px 20px;
+    margin: 10px 0;
+    background-color: white;
+    color: rgb(102 53 239);
+    border: 1px solid rgb(102 53 239);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+   
+}
+input[type=submit]:hover {
+    background-color: rgb(102 53 239);
+    border: 1px solid white;
+    color: white; 
+  }
+  textarea {
+    resize: vertical;
+  }
+  .width{
+    width: 100%;
+    padding: 12px 12px;
+    margin: 10px 0;
+    font-size: 20px;
+    border:1px solid rgb(102 53 239);
+    caret-color: rgb(102 53 239);
+  }
+@media only screen and (max-width: 869px){
+    .title{
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 769px){
+    .title{
+        font-size: 30px;
+    }
+    div.container{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 477px){
+    .title{
+        font-size: 25px;
+        margin-inline: 40px;
+    }
+    div.container{
+        width: 70%;
+        padding-left: 26px;
+    }
+    .name div{
+        font-size: 20px;
+        margin: 30px 20px ;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 377px){
+    .title{
+        font-size: 22px;
+        margin-inline: 30px;
+    }
+    div.container{
+        padding-left: 22px;
+    }
+    .name div{
+        font-size: 15px;
+        margin: 30px 10px;
+        margin-bottom: 10px;
+    }
+}
